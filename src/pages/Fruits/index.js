@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text} from 'react-native';
 
 // import { Container } from './styles';
 
@@ -11,7 +11,7 @@ const Fruits = () => {
   return (
     <View justifyContent="center" alignItems="center" flex={1}>
       {fruits.map((fruit) => (
-        <Text key={fruit}>{fruit}</Text>
+        <Text key={fruit.id}>{fruit.name}</Text>
       ))}
     </View>
   );
